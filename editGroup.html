@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myPage.css">
+    <link rel="stylesheet" href="joined.css">
+    <link rel="stylesheet" href="editGroup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="sideNav">
+        <header>My Page</header>
+        <img src="img/user.png" alt="" id="userImg">
+        <ul>
+            <li><a href="joined.html">Joined Group</a></li>
+            <li><a href="created.html">Created Group</a></li>
+            <li><a href="editInfo.html">Edit Information</a></li>
+            <li>Log Out</li>
+        </ul>
+    </div>
+    <div class="contents">
+        <div id="joinedGroup">
+            <div class="book">
+                <div class="bookImageDiv">
+                    <img src="https://image.aladin.co.kr/product/13740/67/cover500/8970129812_2.jpg" alt="book" class="bookImage">
+                    <input type="file" id="bookImageInput">
+                </div>
+                <div class="bookDescription">
+                    <div class="bookName">
+                        <label for="bookName">Name</label>
+                        <input type="text" placeholder="파친코">
+                    </div>
+                    <div class="bookPrice">
+                        <label for="bookPrice">Price</label>
+                        <input type="number" placeholder="10000">
+                    </div>
+                    <div class="bookLink">
+                        <label for="bookLink">Link</label>
+                        <input type="text" placeholder="amazon.com">
+                    </div>
+                    <div class="bookParticipants">
+                        <label for="bookParticipants">Participants</label>
+                        <input type="number" placeholder="7">
+                    </div>
+                    <div class="email">
+                        <label for="bookEmail">Email</label>
+                        <input type="email" placeholder="asdf@gmail.com">
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Edit">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

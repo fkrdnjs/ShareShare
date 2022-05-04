@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chrarset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pay-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700&display=swap" rel="stylesheet">
+    <title>Pay page</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="newmain.html" id="pagename">TAG</a></h1>
+
+        <form action="" method="get" style="width:800px;">
+            <input type="text" name="" id="" placeholder="Please enter a search term">
+            <button type="button" style="margin-top:10px;"><img src="img/see.png" id="buttonimg"></button>
+        </form>
+
+        <nav>
+            <a href="">Login</a>
+            <a href="signup.html">Signup</a>
+            <a href="">Cart</a>
+            <a href="">Mypage</a>
+        </nav>
+
+    </header>
+
+    <div id="payback">
+    <nav id="pay">
+        <h1>Payment</h1>
+
+        <ul>
+            <li>Product confirmation</li>
+            <table id="bookiinfo">
+                <th style="width:45%;">Product name</th>
+                <th style="width:10%;">Purchase price</th>
+                <th style="width:10%;">Quantity</th>
+                <th style="width:10%;">Total</th>
+                <tr>
+                    <td id="bookimage">
+                        <div>
+                            <img src="https://image.yes24.com/Goods/59382261/L" alt="" id="book">
+                        </div>
+
+                        <div style="padding-top:45px; width:45%; text-align:center;">
+                            책 이름
+                        </div>
+
+                    </td>
+                    <td>가격</td>
+                    <td>1</td>
+                    <td><b>합계 = 수량 * 가격</b></td>
+                </tr>
+            </table>
+
+            <hr>
+            <br>
+
+            <li>Enter Shipping Destination Information</li>
+            <fieldset>
+                <ul>
+                    <li>
+                        <label for="addr" class="title">Adress</label><br>
+                        <input type="text" size="40" id="addr" style="height:20px; width:70%;">
+                    </li>
+                    
+                    <li>
+                        <label for="tel2" class="title">Phone Number</label><br>
+                        <input type='tel' name='phone1' value="010"/> -
+                        <input type='tel' name='phone2'/> -
+                        <input type='tel' name='phone3'/>
+                    </li>
+                    
+                    <li>
+                        <label for="comment" class="title">Shipping Request</label><br>
+                        <textarea cols="40" rows="3" id="comment" style="width:70%;"></textarea>
+                    </li>
+                </ul>
+            </fieldset>
+            <br>
+
+            <li>Payment method</li>
+            <form name="paymethod">
+                <label><input type="radio" name="paymethod" checked/>Account Transfer</label>
+                <label><input type="radio" name="paymethod"/>Naver Pay</label>
+                <label><input type="radio" name="paymethod"/>Kakao Pay</label>
+                <label><input type="radio" name="paymethod"/>Credit / Check Card</label>
+            </form>
+
+            <br>
+
+            <li>Terms and Conditions</li>
+            <div style="border:1px solid black; padding:3px;">
+                어차피 읽지도 않는 글~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+                어차피 읽지도 않는 글~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+                어차피 읽지도 않는 글~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+                어차피 읽지도 않는 글~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+                어차피 읽지도 않는 글~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+                어차피 읽지도 않는 글~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+                어차피 읽지도 않는 글~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+            </div>
+            <br>
+
+            <div style="text-align:right;">
+                <label for="agree">Do you agree to the terms and conditions?</label>
+                <input type="checkbox" id="agree" name="agree">
+            </div>
+        </ul>
+
+        <form action="" method="post" style="text-align:right;">
+            <input type='button' value='CANCEL' onClick="location.href='main.html'"/>
+            <input type='button' value='ORDER'/>
+        </form>
+
+    </nav>
+    </div>
+    
+    <footer class="footer">
+        <h1><a href="newmain.html" id="pagename">TAG</a></h1>
+        <div>
+            This is Team TAG's Project!!<br><br>
+            최락원, 김민수, 이은서, 변승진, 이은지, 유종혁
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

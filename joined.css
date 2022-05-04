@@ -1,0 +1,22 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#box{
+    background-color: #f3eded;
+    width: 90%;
+    height: 600px;
+    overflow: auto;
+}
+.contents{
+    padding-top: 30px;
+    position: relative;
+    left: 50px;
+}
+
+.bookmodify{
+    margin-left:5px ;
+}
+.bookmodify a{
+    text-decoration: none;
+    color: black;
+}

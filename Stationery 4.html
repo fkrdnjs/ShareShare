@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chrarset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newmain-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>main-page</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="sharebox"><a href="group.html" id="share"><b>LET'S<br>START</a></b></div>
+        <h1><a href="newmain.html" id="pagename">SHARESHARE</a></h1>
+
+        <nav>
+            <a href="joined.html" id="share">CART</a>
+            <a href="login.html"><img src="img/user.png" alt="searchimg" id="login"></a>
+        </nav>
+
+    </header>
+
+        <div id="category">
+            <a href="newmain.html">
+                <!-- <div><img src="img/book.png" alt=""></div> -->
+                <div>Book</div>
+            </a>
+            <a href="food.html">
+                <!-- <div><img src="img/food.png" alt=""></div> -->
+                <div>Food</div>
+            </a>
+            <a href="stationery.html">
+                <!-- <div><img src="img/pencil.png" alt=""></div> -->
+                <div style="color: black;">Stationery</div>
+            </a>
+            <a href="clothes.html">
+                <!-- <div><img src="img/cloth.png" alt=""></div> -->
+                <div>Clothes</div>
+            </a>
+            <a href="etc.html">
+                <!-- <div><img src="img/etc.png" alt=""></div> -->
+                <div>Etc</div>
+            </a>
+        </div>
+
+<div id="contentbox">
+    <div id="contenthead">
+        <form action="" method="get" style="width:100%;">
+            <!-- <div id=""></div> -->
+            <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input class="search-bar__input" type="search" placeholder="search" />
+        </div>
+        </form>
+
+        <select name="filter" id="filter">
+            <option value="recent">recent</option>
+            <option value="expensive">Top price</option>
+            <option value="cheap">Low price</option>
+            <option value="deadline">due date</option>
+        </select>
+    </div>
+    <div id="contents">
+        <article>
+            <a href=""><img src="https://image.aladin.co.kr/product/13740/67/cover500/8970129812_2.jpg" alt=""></a>
+
+            <div class = "contents_bottom">
+                <div class="book_name">
+                    <div>파친코</div>
+                    <div><img  onclick="change()" src="img/heart.png" alt="" id="img1"></div>
+                </div>
+
+                <div class="prog">
+                    <progress value="20" max="100"></progress>
+                </div>
+
+                <div class="price">
+                    <div class="personbox"><img src="img/person.png" alt="" class="person"> <p style="margin: 0;">2/10</p></div>
+                    <span style="color:balck"> <del style="color:rgb(180, 179, 179); font-size: 13px;">19000  </del>  15000원</span>
+                </div>
+
+            </div>
+
+            <script>
+                let flag = true;
+
+                function change(){
+                    document.getElementById("img1").src = flag ? "img/heartred.png" : "img/heart.png";
+                    flag = !flag;
+                }
+            </script>
+
+        </article>
+
+        <article>
+            <a href=""><img src="https://image.aladin.co.kr/product/13740/67/cover500/8970129812_2.jpg" alt=""></a>
+
+            <div class = "contents_bottom">
+                <div class="book_name">
+                    <div>파친코</div>
+                    <div><img  onclick="change2()" src="img/heart.png" alt="" id="img2"></div>
+                </div>
+
+                <div class="prog">
+                    <progress value="20" max="100"></progress>
+                </div>
+
+                <div class="price">
+                    <div class="personbox"><img src="img/person.png" alt="" class="person"> <p style="margin: 0;">2/10</p></div>
+                    <span style="color:balck"> <del style="color:rgb(180, 179, 179); font-size: 13px;">19000  </del>  15000원</span>
+                </div>
+
+            </div>
+
+            <script>
+                let flag2 = true;
+                
+                function change2(){
+                    document.getElementById("img2").src = flag2 ? "img/heartred.png" : "img/heart.png";
+                    flag2 = !flag2;
+                }
+                
+            </script>
+        </article>
+
+        <article>
+            <a href=""><img src="https://image.aladin.co.kr/product/13740/67/cover500/8970129812_2.jpg" alt=""></a>
+
+            <div class = "contents_bottom">
+                <div class="book_name">
+                    <div>파친코</div>
+                    <div><img  onclick="change3()" src="img/heart.png" alt="" id="img3"></div>
+                </div>
+
+                <div class="prog">
+                    <progress value="20" max="100"></progress>
+                </div>
+
+                <div class="price">
+                    <div class="personbox"><img src="img/person.png" alt="" class="person"> <p style="margin: 0;">2/10</p></div>
+                    <span style="color:balck"> <del style="color:rgb(180, 179, 179); font-size: 13px;">19000  </del>  15000원</span>
+                </div>
+
+            </div>
+
+            <script>
+                let flag3 = true;
+                
+                function change3(){
+                    document.getElementById("img3").src = flag3 ? "img/heartred.png" : "img/heart.png";
+                    flag3 = !flag3;
+                }
+                
+            </script>
+        </article>
+
+        <article>
+            <a href=""><img src="https://image.aladin.co.kr/product/13740/67/cover500/8970129812_2.jpg" alt=""></a>
+
+            <div class = "contents_bottom">
+                <div class="book_name">
+                    <div>파친코</div>
+                    <div><img  onclick="change4()" src="img/heart.png" alt="" id="img4"></div>
+                </div>
+
+                <div class="prog">
+                    <progress value="20" max="100"></progress>
+                </div>
+
+                <div class="price">
+                    <div class="personbox"><img src="img/person.png" alt="" class="person"> <p style="margin: 0;">2/10</p></div>
+                    <span style="color:balck"> <del style="color:rgb(180, 179, 179); font-size: 13px;">19000  </del>  15000원</span>
+                </div>
+
+            </div>
+
+            <script>
+                let flag4 = true;
+                
+                function change4(){
+                    document.getElementById("img4").src = flag4 ? "img/heartred.png" : "img/heart.png";
+                    flag4 = !flag4;
+                }
+                
+            </script>
+        </article>
+
+        <article>
+            <a href=""><img src="https://image.aladin.co.kr/product/13740/67/cover500/8970129812_2.jpg" alt=""></a>
+
+            <div class = "contents_bottom">
+                <div class="book_name">
+                    <div>파친코</div>
+                    <div><img  onclick="change5()" src="img/heart.png" alt="" id="img5"></div>
+                </div>
+
+                <div class="prog">
+                    <progress value="20" max="100"></progress>
+                </div>
+
+                <div class="price">
+                    <div class="personbox"><img src="img/person.png" alt="" class="person"> <p style="margin: 0;">2/10</p></div>
+                    <span style="color:balck"> <del style="color:rgb(180, 179, 179); font-size: 13px;">19000  </del>  15000원</span>
+                </div>
+
+            </div>
+
+            <script>
+                let flag5 = true;
+                
+                function change5(){
+                    document.getElementById("img5").src = flag5 ? "img/heartred.png" : "img/heart.png";
+                    flag5 = !flag5;
+                }
+                
+            </script>
+        </article>
+
+        <article>
+            <a href=""><img src="https://image.aladin.co.kr/product/13740/67/cover500/8970129812_2.jpg" alt=""></a>
+
+            <div class = "contents_bottom">
+                <div class="book_name">
+                    <div>파친코</div>
+                    <div><img  onclick="change6()" src="img/heart.png" alt="" id="img6"></div>
+                </div>
+
+                <div class="prog">
+                    <progress value="20" max="100"></progress>
+                </div>
+
+                <div class="price">
+                    <div class="personbox"><img src="img/person.png" alt="" class="person"> <p style="margin: 0;">2/10</p></div>
+                    <span style="color:balck"> <del style="color:rgb(180, 179, 179); font-size: 13px;">19000  </del>  15000원</span>
+                </div>
+
+            </div>
+
+            <script>
+                let flag6 = true;
+                
+                function change6(){
+                    document.getElementById("img6").src = flag6 ? "img/heartred.png" : "img/heart.png";
+                    flag6 = !flag6;
+                }
+                
+            </script>
+        </article>
+
+        <article>
+            <a href=""><img src="https://image.aladin.co.kr/product/13740/67/cover500/8970129812_2.jpg" alt=""></a>
+
+            <div class = "contents_bottom">
+                <div class="book_name">
+                    <div>파친코</div>
+                    <div><img  onclick="change7()" src="img/heart.png" alt="" id="img7"></div>
+                </div>
+
+                <div class="prog">
+                    <progress value="20" max="100"></progress>
+                </div>
+
+                <div class="price">
+                    <div class="personbox"><img src="img/person.png" alt="" class="person"> <p style="margin: 0;">2/10</p></div>
+                    <span style="color:balck"> <del style="color:rgb(180, 179, 179); font-size: 13px;">19000  </del>  15000원</span>
+                </div>
+
+            </div>
+
+            <script>
+                let flag7 = true;
+                
+                function change7(){
+                    document.getElementById("img7").src = flag7 ? "img/heartred.png" : "img/heart.png";
+                    flag7 = !flag7;
+                }
+                
+            </script>
+        </article>
+
+        <article>
+            <a href=""><img src="https://image.aladin.co.kr/product/13740/67/cover500/8970129812_2.jpg" alt=""></a>
+
+            <div class = "contents_bottom">
+                <div class="book_name">
+                    <div>파친코</div>
+                    <div><img  onclick="change8()" src="img/heart.png" alt="" id="img8"></div>
+                </div>
+
+                <div class="prog">
+                    <progress value="20" max="100"></progress>
+                </div>
+
+                <div class="price">
+                    <div class="personbox"><img src="img/person.png" alt="" class="person"> <p style="margin: 0;">2/10</p></div>
+                    <span style="color:balck"> <del style="color:rgb(180, 179, 179); font-size: 13px;">19000  </del>  15000원</span>
+                </div>
+
+            </div>
+
+            <script>
+                let flag8 = true;
+                
+                function change8(){
+                    document.getElementById("img8").src = flag8 ? "img/heartred.png" : "img/heart.png";
+                    flag8 = !flag8;
+                }
+                
+            </script>
+        </article>
+
+        <article>
+            <a href=""><img src="https://image.aladin.co.kr/product/13740/67/cover500/8970129812_2.jpg" alt=""></a>
+
+            <div class = "contents_bottom">
+                <div class="book_name">
+                    <div>파친코</div>
+                    <div><img  onclick="change9()" src="img/heart.png" alt="" id="img9"></div>
+                </div>
+
+                <div class="prog">
+                    <progress value="20" max="100"></progress>
+                </div>
+
+                <div class="price">
+                    <div class="personbox"><img src="img/person.png" alt="" class="person"> <p style="margin: 0;">2/10</p></div>
+                    <span style="color:balck"> <del style="color:rgb(180, 179, 179); font-size: 13px;">19000  </del>  15000원</span>
+                </div>
+
+            </div>
+
+            <script>
+                let flag9 = true;
+                
+                function change9(){
+                    document.getElementById("img9").src = flag9 ? "img/heartred.png" : "img/heart.png";
+                    flag9 = !flag9;
+                }
+                
+            </script>
+        </article>
+        <article>
+            
+            <a href=""><img src="https://image.aladin.co.kr/product/13740/67/cover500/8970129812_2.jpg" alt=""></a>
+            <div class = "contents_bottom">
+                <div class="book_name">
+                    <div>파친코</div>
+                    <div><img  onclick="change10()" src="img/heart.png" alt="" id="img10"></div>
+                </div>
+
+                <div class="prog">
+                    <progress value="20" max="100"></progress>
+                </div>
+
+                <div class="price">
+                    <div class="personbox"><img src="img/person.png" alt="" class="person"> <p style="margin: 0;">2/10</p></div>
+                    <span style="color:balck"> <del style="color:rgb(180, 179, 179); font-size: 13px;">19000  </del>  15000원</span>
+                </div>
+
+            </div>
+
+            <script>
+                let flag10 = true;
+
+                function change10(){
+                    document.getElementById("img10").src = flag10 ? "img/heartred.png" : "img/heart.png";
+                    flag10 = !flag10;
+                }
+            </script>
+
+        </article>
+        <article>
+            
+            <a href=""><img src="https://image.aladin.co.kr/product/13740/67/cover500/8970129812_2.jpg" alt=""></a>
+            <div class = "contents_bottom">
+                <div class="book_name">
+                    <div>파친코</div>
+                    <div><img  onclick="change11()" src="img/heart.png" alt="" id="img11"></div>
+                </div>
+
+                <div class="prog">
+                    <progress value="20" max="100"></progress>
+                </div>
+
+                <div class="price">
+                    <div class="personbox"><img src="img/person.png" alt="" class="person"> <p style="margin: 0;">2/10</p></div>
+                    <span style="color:balck"> <del style="color:rgb(180, 179, 179); font-size: 13px;">19000  </del>  15000원</span>
+                </div>
+
+            </div>
+
+            <script>
+                let flag11 = true;
+
+                function change11(){
+                    document.getElementById("img11").src = flag11 ? "img/heartred.png" : "img/heart.png";
+                    flag11 = !flag11;
+                }
+            </script>
+
+        </article>
+
+
+        <article>
+            
+            
+            <a href=""><img src="https://image.aladin.co.kr/product/13740/67/cover500/8970129812_2.jpg" alt=""></a>
+            <div class = "contents_bottom">
+                <div class="book_name">
+                    <div>파친코</div>
+                    <div><img  onclick="change12()" src="img/heart.png" alt="" id="img12"></div>
+                </div>
+
+                <div class="prog">
+                    <progress value="20" max="100"></progress>
+                </div>
+
+                <div class="price">
+                    <div class="personbox"><img src="img/person.png" alt="" class="person"> <p style="margin: 0;">2/10</p></div>
+                    <span style="color:balck"> <del style="color:rgb(180, 179, 179); font-size: 13px;">19000  </del>  15000원</span>
+                </div>
+
+            </div>
+
+            <script>
+                let flag12 = true;
+
+                function change12(){
+                    document.getElementById("img12").src = flag12 ? "img/heartred.png" : "img/heart.png";
+                    flag12 = !flag12;
+                }
+            </script>
+
+        </article>
+
+    </div>
+</div>
+<div class="pagenumberblock">
+    <a href="Stationery.html";> 1 </a>
+    <a href="Stationery 2.html";> 2 </a>
+    <a href="Stationery 3.html";> 3 </a>
+    <a href="Stationery 4.html";> <b>4</b> </a>
+
+</div>
+
+
+
+
+
+    <div id="finish">
+        <footer class="footer">
+            <h1><a href="newmain.html" id="pagename">SHARESHARE</a></h1>
+            <div>
+            This is Team TAG's Project!!<br>
+            최락원, 김민수, 이은서, 변승진, 이은지, 유종혁
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+
+</html>

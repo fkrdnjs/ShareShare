@@ -1,0 +1,9 @@
+.homeButton {
+    position: absolute;
+    right: 100px; 
+    top: 80px;
+}
+.homeButton img {
+    width: 50px;
+    height: 50px;
+}
